@@ -1,0 +1,50 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    text-align: center;
+    padding: 40px;
+}
+.container{
+    padding: 0 200px;
+}
+h1{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(63, 63, 63);
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.column{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 5px;
+}
+.column img{
+    margin-top: 7px;
+    width: 100%;
+    vertical-align: middle;
+}
+@media screen and (max-width: 1200px) {
+    .container{
+        padding: 0 70px;
+    }
+    .column{
+        flex:50%;
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .container{
+        padding: 0 0px;
+    }
+    .column{
+        flex: 100%;
+        max-width: 100%;
+    }
+}
